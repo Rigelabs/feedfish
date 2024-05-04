@@ -7,7 +7,7 @@ fun randomDay():String{
     return week[Random().nextInt(week.size)] //
 }
 fun fishFood(day:String) : String{
-    var food =String
+
     return when(day){
         "Monday" ->  "Flakes"
         "Tuesday" ->  "Pellets"
@@ -24,7 +24,7 @@ fun feedFish(){
     val food = fishFood(day)
     println ("Today is $day and the fish eat $food")
 }
-fun main(args: Array<String>){
+fun main(){
     feedFish()
 }
 
